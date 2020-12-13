@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+
+     <!-- MY MAIN CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="/static/css/ajide.css">
+    <link rel='stylesheet' href="/static/css/bootstrap.css">
+
+
+
+    <title>Find It</title>
+  </head>
+  <body class="text-center" style="background-image: url('/static/css/f.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+
+      </div>
+      <div class="col-sm midb">
+        <form class="form-signin" method="GET">
+            <h1 class="h3 mb-3 font-weight-normal"></h1>
+
+            <div class="input-group">
+              <input type="text" name="location" class="form-control text-center" placeholder="Enter City Name" required>
+              <div class="input-group">
+                <button class="btn btn-outline-secondary" type="submit">Check</button>
+              </div>
+              <div class="col-lg-12">
+                <span>
+                  <p class="weat">{{ weather_condition }}</p>
+                  <p class="desc">{{ weather_description }}</p>
+                  <p class="cou">{{ country }}</p>
+                  <p class="cit">{{ city }}</p>
+                  <p><b>{{ temp }}</b>&nbsp;&nbsp;<b>{{ base }}</b></p>
+
+                </span>
+              </div>
+            </div>
+
+          <p class="mt-5 mb-3 text-muted"><a href="https://www.github.com/JiboGithub">&copy; Designed by Ajide Habeeb - 2020</a></p>
+          </form>
+      </div>
+      <div class="col-sm">
+
+      </div>
+    </div>
+</div>
+  </body>
+</html>
