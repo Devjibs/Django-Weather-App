@@ -10,7 +10,7 @@ def search_it(request):
         url = f"https://api.openweathermap.org/data/2.5/weather?q={city}"
 
         # demonstrate how to use the 'params' parameter:
-        x = requests.get(url, params={"appid": "ead9aa9cf0f190268f8780cc1374ff1a"})
+        x = requests.get(url, params={"appid": "PUT YOUR OWN API KEY OBTAINED FROM OPENWEATHER WEBSITE HERE"})
 
         #Converts response object to dictionary
         x = x.json()
